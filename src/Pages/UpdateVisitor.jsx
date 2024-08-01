@@ -20,7 +20,10 @@ const UpdateVisitor = () => {
                             </select>
                         </div>
                         <div className='bg-yellow-400 w-[fit-content] text-[17px] text-white px-[0.5rem] rounded-sm  cursor-pointer py-[0.1rem] mt-1'>
-                            Update
+                        <span className='max-[1100px]:hidden'>
+                                enteries
+
+                                </span>
                         </div>
                     </div>
                 </div>

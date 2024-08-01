@@ -79,7 +79,10 @@ const Sponsors = () => {
                                     <option value={50}>50</option>
                                 </select>
                                 &nbsp;
+                                <span className='max-[1100px]:hidden'>
                                 enteries
+
+                                </span>
                             </div>
                             <div className=''>
                                 Search: <input type='text' className='border border-black h-[20px]' onChange={(e) => {

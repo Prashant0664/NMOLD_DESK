@@ -66,7 +66,10 @@ const Stalls = () => {
                                     <option value={50}>50</option>
                                 </select>
                                 &nbsp;
+                                <span className='max-[1100px]:hidden'>
                                 enteries
+
+                                </span>
                             </div>
                             <div className=''>
 
