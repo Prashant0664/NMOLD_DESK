@@ -9,3 +9,14 @@
     border-left:none;
     border-right:none;
 }
+.navbar-content2{
+    height:4rem;
+    border: solid none solid none;
+    border-color:grey;
+    border-width: 2px;
+    padding-left: 0.5rem;
+    padding-top:0.9rem;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}

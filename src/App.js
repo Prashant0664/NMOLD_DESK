@@ -10,16 +10,36 @@ import ContactRequests from './Pages/ContactRequests';
 import Stalls from './Pages/Stalls';
 import Welcome from './Pages/Welcome';
 import TopNavbar from './Pages/TopNavbar';
+import Home from './Pages/Home';
+import Login from './Pages/Login';
+import React from 'react';
 // /* Developed by https://github.com/Prashant0664 */
 
 function App() {
+  const [state, setstate] = React.useState(false)
+  // if url is / then redirect to /home
+  React.useEffect(() => {
+    if (window.location.pathname === "/") {
+      setstate(false)
+    }
+    else {
+      setstate(true)
+    }
+    console.log(state, "ss");
+  }, [window.location.pathname, state])
+
   return (
     <>
       <BrowserRouter>
-        <TopNavbar />
-        <Navbar />
+        <div className={`${state === true ? "hidden" : ""}`}>
+          <Login seturl={setstate} />
+        </div>
+        <div className={`${state === true ? "" : "hidden"}`}>
+          <TopNavbar />
+          <Navbar />
+        </div>
         <Routes>
-          <Route path="/" element={<Welcome />} />
+          <Route path="/home" element={<Welcome />} />
           <Route path="/pendingtickets" element={<Pendingtickets />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/visitors" element={<Visitors />} />
@@ -27,7 +47,6 @@ function App() {
           <Route path="/approvedtickets" element={<ApprovedTickets />} />
           <Route path="/contactrequests" element={<ContactRequests />} />
           <Route path="/stalls" element={<Stalls />} />
-
         </Routes>
       </BrowserRouter>
     </>

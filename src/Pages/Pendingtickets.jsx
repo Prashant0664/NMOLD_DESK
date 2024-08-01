@@ -185,9 +185,9 @@ const Pendingtickets = () => {
     }
     return (
         <>
-            <div className='ml-[16%] mt-[4rem] absolute w-[83%]'>
+            <div className='ml-[16%] mt-[4rem] absolute w-[83%] max-[1100px]:w-[95%] max-[1100px]:ml-[4rem]'>
                 <div className=''>
-                    <div className='bg-orange-500 text-white text-[25px] pl-2 py-2'>
+                    <div className='bgc  text-white text-[25px] pl-2 py-2'>
                         Pending Requests
                     </div>
                     <div className='mt-[3rem]'>
@@ -217,7 +217,7 @@ const Pendingtickets = () => {
                         </div>
                         <div className='overflow-x-scroll'>
                             <table className='w-full text-white  py-1 pendingtickets-table '>
-                                <tr className='tablerow1 bg-orange-500'>
+                                <tr className='tablerow1 bgc2 '>
                                     <th
                                         onClick={() => {
                                             sortdata('srno')

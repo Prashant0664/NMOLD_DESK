@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const TopNavbar = () => {
+    const navigate = useNavigate();
     return (
         <>
             <div className='absolute top-0 w-full'>
@@ -9,7 +11,10 @@ const TopNavbar = () => {
                         <div className=''>
                             Password
                         </div>
-                        <div className=''>
+                        <div className='' onClick={()=>{
+                            navigate('/')
+                            window.location.reload()
+                        }}>
                             Log Out
                         </div>
                     </div>

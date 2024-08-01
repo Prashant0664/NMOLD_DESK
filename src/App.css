@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bgc{
+    background-color: rgba(88, 132, 255,0.9)
+}
+.bgc2 > th{
+    background-color: rgba(67, 117, 254, 0.9)
+}
+body{
+    background-color: rgb(243, 243, 243);
+}

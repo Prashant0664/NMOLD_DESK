@@ -8,3 +8,10 @@
 .pendingtickets-table > tr > th{
     min-width:100px;
 }
+
+table > tr:nth-child(odd){
+    background-color: #c7cfec;
+}
+table > tr:nth-child(even){
+    background-color: rgba(206, 214, 244, 0.4);
+}
