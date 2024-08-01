@@ -1,0 +1,10 @@
+.pendingtickets-table > tr > th:hover{
+    cursor: pointer;
+}
+.pendingtickets-table > tr > td{
+    border: 1px solid rgb(210, 210, 210);
+    min-width:100px;
+}
+.pendingtickets-table > tr > th{
+    min-width:100px;
+}

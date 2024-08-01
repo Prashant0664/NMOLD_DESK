@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Pendingtickets from './Pages/Pendingtickets';
+import Navbar from './Pages/Navbar';
+import Sponsors from './Pages/Sponsors';
+import Visitors from './Pages/Visitors';
+import UpdateVisitor from './Pages/UpdateVisitor';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ApprovedTickets from './Pages/ApprovedTickets';
+import ContactRequests from './Pages/ContactRequests';
+import Stalls from './Pages/Stalls';
+import Welcome from './Pages/Welcome';
+import TopNavbar from './Pages/TopNavbar';
+// /* Developed by https://github.com/Prashant0664 */
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <TopNavbar />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/pendingtickets" element={<Pendingtickets />} />
+          <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/visitors" element={<Visitors />} />
+          <Route path="/updatevisitor" element={<UpdateVisitor />} />
+          <Route path="/approvedtickets" element={<ApprovedTickets />} />
+          <Route path="/contactrequests" element={<ContactRequests />} />
+          <Route path="/stalls" element={<Stalls />} />
+
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
