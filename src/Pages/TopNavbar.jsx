@@ -6,7 +6,7 @@ const TopNavbar = () => {
     const navigate = useNavigate();
     return (
         <>
-            <div className='absolute top-0 w-full max- bg-blue-600'>
+            <div className='absolute top-0 w-full max-[1100px]:w-[100vw] bg-blue-600'>
                 <div className='w-[100%] flex justify-between items-center '>
                     <div className='flex gap-4 ml-6'>
                         <div className=' pt-3 pb-1'>
@@ -17,7 +17,7 @@ const TopNavbar = () => {
                         </div>
                     </div>
                     <div className='text-white cursor-pointer flex mt-0 gap-[2rem] max-[1100px]:gap-[1rem] justify-end items-end mr-[5rem] max-[900px]:mr-[1rem]'>
-                        <div className='text-white'>
+                        <div className='text-white max-[600px]:hidden'>
                             Password
                         </div>
                         <div className='' onClick={() => {

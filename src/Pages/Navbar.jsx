@@ -26,8 +26,8 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-black w-[3.5rem] min-[1100px]:hidden h-full left-0 absolute block mt-[4rem]'>
-                <div className='text-white'>
+            <div className='bg-black w-[100%] min-[1100px]:hidden h-[3rem] left-0 absolute block mt-[4rem]'>
+                <div className='text-white flex justify-evenly'>
                     <div className='navbar-content2'>
                         <Link to="/pendingtickets">
                             <div className=''>
