@@ -185,15 +185,18 @@ const Pendingtickets = () => {
     }
     return (
         <>
-            <div className='ml-[16%] mt-[4rem] absolute w-[83%] max-[1100px]:w-[95%] max-[1100px]:ml-[4rem]'>
+            <div className='ml-[15%] mt-[4rem] absolute w-[85%] max-[1100px]:w-full max-[1100px]:ml-[3.5rem]'>
                 <div className=''>
                     <div className='bgc  text-white text-[25px] pl-2 py-2'>
                         Pending Requests
                     </div>
-                    <div className='mt-[3rem]'>
+                    <div className='mt-[3rem] ml-[1%] mr-[1%]'>
                         <div className='flex justify-between w-full'>
                             <div className=''>
+                                <span className='max-[1100px]:hidden'>
                                 Show
+
+                                </span>
                                 <select className='bg-white border border-black mb-1 text-black'
                                     onChange={(e) => {
                                         setinterval(e.target.value)
@@ -207,7 +210,10 @@ const Pendingtickets = () => {
                                     <option value={50}>50</option>
                                 </select>
                                 &nbsp;
+                                <span className='max-[1100px]:hidden'>
                                 enteries
+
+                                </span>
                             </div>
                             <div className=''>
                                 Search: <input type='text' className='border border-black h-[20px]' onChange={(e) => {

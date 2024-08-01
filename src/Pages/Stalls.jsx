@@ -44,12 +44,12 @@ const Stalls = () => {
     }
     return (
         <>
-            <div className='ml-[16%] mt-[4rem] absolute w-[83%]'>
+            <div className='ml-[15%] mt-[4rem] absolute w-[85%]'>
                 <div className=''>
                     <div className='bgc  text-white text-[25px] pl-2 py-2'>
                         Stalls
                     </div>
-                    <div className='mt-[3rem]'>
+                    <div className='mt-[3rem] ml-[1%] mr-[1%]'>
                         <div className='flex justify-between w-full'>
                             <div className=''>
                                 Show
@@ -79,7 +79,7 @@ const Stalls = () => {
                         <div className=' overflow-x-scroll '>
 
                         <table className='w-full text-white  py-1 pendingtickets-table'>
-                            <tr  className='bgc '>
+                            <tr  className='bgc2 '>
                                 <th
                                     onClick={() => sortdata('srno')}
 
